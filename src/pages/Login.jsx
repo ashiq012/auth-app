@@ -23,7 +23,7 @@ function Login() {
       return handleError('All fields are require...');
     }
     try {
-      const url = 'http://localhost:4000/api/v1/login'
+      const url = 'https://auth-backend-gray.vercel.app/api/v1/login'
       const response = await fetch(url,{
         method : 'POST',
         headers : {
